@@ -39,4 +39,5 @@ github "xquartz",    "1.1.0"
 
 github "virtualbox", "1.0.5"
 github "vagrant",    "2.0.10"
+github "chrome",     "1.1.1"
 github "firefox",    "1.1.4"

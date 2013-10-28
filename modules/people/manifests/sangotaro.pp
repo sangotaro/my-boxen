@@ -1,6 +1,7 @@
 class people::sangotaro {
   include virtualbox
   include vagrant
+  include chrome
   include firefox
 
   package {
@@ -19,7 +20,8 @@ class people::sangotaro {
   }
   exec { "sh ${dotfiles}/install.sh":
     cwd => "${home}/dotfiles",
-    require => Repository[$dotfiles]
+    require => Repository[$dotfiles],
+    creates => "${home}/.vimrc"
   }
 
 }
