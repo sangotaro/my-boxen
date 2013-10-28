@@ -9,7 +9,8 @@ class people::sangotaro {
   package {
     [
       'tree',
-      'rename'
+      'rename',
+      'tig'
     ]:
   }
 
