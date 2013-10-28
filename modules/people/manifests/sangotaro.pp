@@ -4,6 +4,7 @@ class people::sangotaro {
   include chrome
   include firefox
 
+  # Homebrew
   homebrew::tap { 'sanemat/font': }
   package { 'ricty': }
   package {
@@ -13,6 +14,7 @@ class people::sangotaro {
       'tig'
     ]:
   }
+
 
   # dotfile setting
   $home = "/Users/${::boxen_user}"
@@ -27,9 +29,16 @@ class people::sangotaro {
     creates => "${home}/.vimrc"
   }
 
+  # other
   package {
     'XtraFinder':
       source   => "http://www.trankynam.com/xtrafinder/downloads/XtraFinder.dmg",
       provider => pkgdmg;
+    'GoogleJapaneseInput':
+      source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
+      provider => pkgdmg;
+    'Mou':
+      source   => "http://mouapp.com/download/Mou.zip",
+      provider => compressed_app;
   }
 }
