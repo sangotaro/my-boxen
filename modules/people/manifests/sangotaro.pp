@@ -26,4 +26,9 @@ class people::sangotaro {
     creates => "${home}/.vimrc"
   }
 
+  package {
+    'XtraFinder':
+      source   => "http://www.trankynam.com/xtrafinder/downloads/XtraFinder.dmg",
+      provider => pkgdmg;
+  }
 }
