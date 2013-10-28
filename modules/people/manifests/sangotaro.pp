@@ -4,6 +4,8 @@ class people::sangotaro {
   include chrome
   include firefox
 
+  homebrew::tap { 'sanemat/font': }
+  package { 'ricty': }
   package {
     [
       'tree',
