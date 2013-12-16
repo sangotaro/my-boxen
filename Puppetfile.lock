@@ -11,7 +11,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-chrome
   specs:
-    chrome (1.1.1)
+    chrome (1.1.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -21,7 +21,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
-    firefox (1.1.4)
+    firefox (1.1.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -76,12 +76,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (2.0.10)
+    vagrant (3.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
   specs:
-    virtualbox (1.0.5)
+    virtualbox (1.0.9)
 
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
@@ -101,9 +101,9 @@ GITHUBTARBALL
 DEPENDENCIES
   autoconf (= 1.0.0)
   boxen (= 3.0.2)
-  chrome (= 1.1.1)
+  chrome (= 1.1.2)
   dnsmasq (= 1.0.0)
-  firefox (= 1.1.4)
+  firefox (= 1.1.5)
   gcc (= 2.0.1)
   git (= 1.2.5)
   homebrew (= 1.4.1)
@@ -116,7 +116,7 @@ DEPENDENCIES
   ruby (= 6.3.4)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
-  vagrant (= 2.0.10)
-  virtualbox (= 1.0.5)
+  vagrant (= 3.0.1)
+  virtualbox (= 1.0.9)
   xquartz (= 1.1.0)
 

@@ -37,7 +37,7 @@ github "xquartz",    "1.1.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-github "virtualbox", "1.0.5"
-github "vagrant",    "2.0.10"
-github "chrome",     "1.1.1"
-github "firefox",    "1.1.4"
+github "virtualbox", "1.0.9"
+github "vagrant",    "3.0.1"
+github "chrome",     "1.1.2"
+github "firefox",    "1.1.5"
