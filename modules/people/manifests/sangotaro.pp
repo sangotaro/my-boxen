@@ -4,6 +4,8 @@ class people::sangotaro {
   include chrome
   include firefox
 
+  include people::sangotaro::ruby
+
   package {
     'XtraFinder':
       source   => "http://www.trankynam.com/xtrafinder/downloads/XtraFinder.dmg",
@@ -29,6 +31,8 @@ class people::sangotaro {
 
   $home = "/Users/${::boxen_user}"
   $dotfiles = "${home}/dotfiles"
+
+  class { 'nodejs::global': version => 'v0.10.21' }
 
   # dotfiles
   repository { $dotfiles:
