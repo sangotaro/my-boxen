@@ -5,7 +5,7 @@ class people::sangotaro::ruby {
 
   class { 'ruby::global': version => "${global_version}" }
 
-  define install_rubies ($version = $title) {
+  define install_gems ($version = $title) {
     ruby::gem { "chef for ${version}":
       gem  => 'chef',
       ruby => $version,
@@ -19,5 +19,5 @@ class people::sangotaro::ruby {
       ruby => $version,
     }
   }
-  install_rubies { $rubies: }
+  install_gems { $rubies: }
 }
