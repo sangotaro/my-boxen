@@ -4,6 +4,10 @@ class people::sangotaro::nodejs {
 
   class { 'nodejs::global': version => "${version}" }
 
+  nodejs::module { "grunt-cli":
+    node_version => $version,
+  }
+
   nodejs::module { "bower":
     node_version => $version,
   }
