@@ -14,20 +14,6 @@ class people::sangotaro {
     'GoogleJapaneseInput':
       source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
       provider => pkgdmg;
-    'Mou':
-      source   => "http://mouapp.com/download/Mou.zip",
-      provider => compressed_app;
-  }
-
-  # Homebrew
-  homebrew::tap { 'sanemat/font': }
-  package { 'ricty': }
-  package {
-    [
-      'tree',
-      'rename',
-      'tig'
-    ]:
   }
 
   $home = "/Users/${::boxen_user}"
