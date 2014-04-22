@@ -28,4 +28,8 @@ class people::sangotaro {
     require => Repository[$dotfiles],
     creates => "${home}/.vimrc"
   }
+  exec { "brew bundle":
+    cwd => "${home}/dotfiles",
+    require => Repository[$dotfiles]
+  }
 }
