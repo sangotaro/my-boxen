@@ -1,6 +1,6 @@
 class people::sangotaro::nodejs {
 
-  $version = 'v0.10.13'
+  $version = 'v0.10.26'
 
   class { 'nodejs::global': version => "${version}" }
 
@@ -9,6 +9,22 @@ class people::sangotaro::nodejs {
   }
 
   nodejs::module { "bower":
+    node_version => $version,
+  }
+
+  nodejs::module { "gulp":
+    node_version => $version,
+  }
+
+  nodejs::module { "component":
+    node_version => $version,
+  }
+
+  nodejs::module { "browserify":
+    node_version => $version,
+  }
+
+  nodejs::module { "webpack":
     node_version => $version,
   }
 }
