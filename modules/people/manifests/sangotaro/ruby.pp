@@ -5,19 +5,19 @@ class people::sangotaro::ruby {
 
   class { 'ruby::global': version => "${global_version}" }
 
-  define install_gems ($version = $title) {
-    ruby::gem { "chef for ${version}":
-      gem  => 'chef',
-      ruby => $version,
-    }
-    ruby::gem { "knife-solo for ${version}":
-      gem  => 'knife-solo',
-      ruby => $version,
-    }
-    ruby::gem { "berkshelf for ${version}":
-      gem  => 'berkshelf',
-      ruby => $version,
-    }
-  }
-  install_gems { $rubies: }
+#  define install_gems ($version = $title) {
+#    ruby::gem { "chef for ${version}":
+#      gem  => 'chef',
+#      ruby => $version,
+#    }
+#    ruby::gem { "knife-solo for ${version}":
+#      gem  => 'knife-solo',
+#      ruby => $version,
+#    }
+#    ruby::gem { "berkshelf for ${version}":
+#      gem  => 'berkshelf',
+#      ruby => $version,
+#    }
+#  }
+#  install_gems { $rubies: }
 }
