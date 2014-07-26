@@ -27,4 +27,8 @@ class people::sangotaro::nodejs {
   nodejs::module { "webpack":
     node_version => $version,
   }
+
+  nodejs::module { "typescript":
+    node_version => $version,
+  }
 }
